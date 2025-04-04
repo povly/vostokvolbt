@@ -1998,7 +1998,7 @@ window.addEventListener("load", () => {
             placesContainer.classList.remove("active");
             groupsContainer.classList.add("active");
 
-            filterPointsByRegion(null, false);
+            filterPointsByRegion(null);
         }
       });
     });
