@@ -1469,9 +1469,9 @@ window.addEventListener("load", () => {
         balloonTitle: "ПС 110 кВ «Табага»",
         balloonContent:
           "Установка устройств противоаварийной автоматики на объектах ПАО «Якутскэнерго» в Центральном энергорайоне РС(Я)",
-        address: "Республика Якутия, п. Табага",
+        address: "Республика Саха, п. Табага",
       },
-      filter: "Республика Якутия",
+      filter: "Республика Саха",
     },
     {
       coordinates: [46.460728, 134.288303],
@@ -1849,9 +1849,9 @@ window.addEventListener("load", () => {
         balloonTitle: 'ПАО "Якутскэнерго"',
         balloonContent:
           "Работы по установке устройств противоаварийной автоматики на филиале Каскад Вилюйских ГЭС им. Е.Н.Батенчука (СМР, ПНР, 2024) Работы по обеспечению сбора и передачи доаварийной информации, приёма и передачи аварийных сигналов и команд на Каскаде Вилюйских ГЭС 1, 2",
-        address: "Республика Якутия, п. Каскад Вилюйских ГЭС",
+        address: "Республика Саха, п. Каскад Вилюйских ГЭС",
       },
-      filter: "Республика Якутия",
+      filter: "Республика Саха",
     },
     {
       coordinates: [50.614344, 137.064104],
@@ -1978,7 +1978,7 @@ window.addEventListener("load", () => {
             // Возврат из деталей объекта к списку объектов региона
             objectContainer.classList.remove("active");
             placesContainer.classList.add("active");
-  
+
             // Восстанавливаем фильтрацию по региону
             if (currentRegion) {
               filterPointsByRegion(currentRegion);
@@ -1987,7 +1987,7 @@ window.addEventListener("load", () => {
             // Возврат из списка объектов к списку регионов
             placesContainer.classList.remove("active");
             groupsContainer.classList.add("active");
-  
+
             // Показываем все точки
             currentRegion = null;
             filterPointsByRegion(null);
@@ -1998,7 +1998,7 @@ window.addEventListener("load", () => {
             placesContainer.classList.remove("active");
             groupsContainer.classList.add("active");
 
-            filterPointsByRegion(null); 
+            filterPointsByRegion(null);
         }
       });
     });
@@ -2023,7 +2023,7 @@ window.addEventListener("load", () => {
       }),
       getPointData = function (item) {
         return {
-          
+
         };
       },
       getPointOptions = function () {
@@ -2063,7 +2063,7 @@ window.addEventListener("load", () => {
 
       // Добавляем обработчик клика на метку
       placemark.events.add('click', function (e) {
-        const targetPoint = points.find(p => 
+        const targetPoint = points.find(p =>
           p.coordinates === e.get('target').geometry.getCoordinates()
         );
         console.log(targetPoint);
@@ -2144,7 +2144,7 @@ window.addEventListener("load", () => {
       if (single){
         currentRegion = null;
       }
-      
+
       objectTitle.textContent = point.properties.balloonTitle;
       objectSubtitle.textContent = point.properties.address.split("<br>")[0];
       objectText.textContent = point.properties.balloonContent;
